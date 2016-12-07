@@ -6,19 +6,25 @@
         <link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
-<body>
-  <h1>MusicCityMatch</h1>
+<body ng-app="MusicMatcher" ng-cloak>
+        <div class="row">
+            <div class="col-xs-offset-2 col-xs-8" ng-view></div>
+        </div>
 
 <!-- JS files -->
-    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
-    <script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="lib/node_modules/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="lib/node_modules/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="/javascripts/app.js"></script>
-    <script type="text/javascript" src="/javascripts/AppConstants.js"></script>
-    <script type="text/javascript" src="/javascripts/AppConfig.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+  <script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="lib/node_modules/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="lib/node_modules/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="/javascripts/app.js"></script>
+  <script type="text/javascript" src="/javascripts/AppConstants.js"></script>
+  <script type="text/javascript" src="/javascripts/AppConfig.js"></script>
 <!-- FACTORIES -->
+  <script src="/javascripts/factories/AuthFactory.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/javascripts/factories/UserFactory.js" type="text/javascript" charset="utf-8" async defer></script>
 <!-- CONTROLLERS -->
+  <script src="/javascripts/controllers/AuthCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/javascripts/controllers/NavCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
