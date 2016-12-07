@@ -1,6 +1,6 @@
 "use strict";
 
-app.factory("TalentFactory", function($q, $http, FIREBASE_CONFIG) {
+app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
 
     let addUser = (authData) => {
         return $q((resolve, reject) => {

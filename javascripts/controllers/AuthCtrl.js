@@ -1,6 +1,6 @@
 "use strict";
 
-app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, TalentFactory) {
+app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, UserFactory) {
     $scope.loginContainer = true;
     $scope.registerContainer = false;
     $scope.login = {
@@ -18,12 +18,14 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
 
     let logMeIn = function(loginStuff) {
         AuthFactory.authenticate(loginStuff).then((didLogin) => {
-            return TalentFactory.getUser(didLogin.uid);
+            console.log("didLogin", didLogin);
+            return UserFactory.getUser(didLogin.uid);
         }).then((userCreds) => {
             $rootScope.user = userCreds;
+            console.log("userCreds", userCreds);
             $scope.login = {};
             $scope.register = {};
-            $location.url(`/talent-home`);
+            $location.url(`/talent/home`);
         });
     };
 
@@ -48,8 +50,7 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
     $scope.registerUser = (registerNewUser) => {
         AuthFactory.registerWithEmail(registerNewUser).then((didRegister) => {
             registerNewUser.uid = didRegister.uid;
-            console.log("didRegister", didRegister);
-            return TalentFactory.addUser(registerNewUser);
+            return UserFactory.addUser(registerNewUser);
         }).then((registerComplete) => {
             logMeIn(registerNewUser);
         });
@@ -66,11 +67,9 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
             uid: userData.uid,
             username: userData.displayName
           };
-          console.log("$rootScope.user",$rootScope.user );
-          $location.url(`/boards/list`);
+          $location.url(`/talent/home`);
         }).catch(function(error) {
           // Handle Errors here.
-          console.log("user error", error);
           var errorCode = error.code;
           var errorMessage = error.message;
           // The email of the user's account used.
@@ -80,5 +79,4 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
           // ...
         });
     };
-
 });
