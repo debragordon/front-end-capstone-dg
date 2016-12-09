@@ -4,3 +4,10 @@
 
 body {
   font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif; }
+
+.small {
+  max-width: 70px; }
+
+a {
+  text-decoration: none;
+  /* no underline */ }

@@ -51,7 +51,7 @@ app.config(function($routeProvider) {
         })
         .when('/talent/services', {
             templateUrl: 'partials/all-services.html',
-            controller: 'ServicesCtrl',
+            controller: 'AllServicesCtrl',
             resolve: {isAuth}
         })
         .when('/talent/services/:id', {
