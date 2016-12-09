@@ -57,5 +57,5 @@ app.factory("JobFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    return{addJob: addJob, getJobs: getJobs};
+    return{addJob: addJob, getJobs: getJobs, getSingleJob: getSingleJob};
 });
