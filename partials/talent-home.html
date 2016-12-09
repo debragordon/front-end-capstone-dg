@@ -1,1 +1,21 @@
-<h6>welcome, you are logged in</h6>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 text-center" ng-repeat="job in jobs">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card card-block">
+              <h3 class="card-title">{{job.title}}</h3>
+              <p class="card-text">{{job.description}}</p>
+              <p class="card-text">In need of a {{job.gender}}</p>
+              <a href="#" class="btn btn-primary">view</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <button class="btn btn-primary">VIEW ALL</button>
+      </div>
+    </div>
+  </div>
