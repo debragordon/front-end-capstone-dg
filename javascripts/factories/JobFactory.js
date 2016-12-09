@@ -28,15 +28,16 @@ app.factory("JobFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    let getJob = (userId) => {
+    let getJobs = (userId) => {
         return $q((resolve, reject) => {
             $http.get(`${FIREBASE_CONFIG.databaseURL}/jobs.json`)
             .success((userObject) => {
                 let jobs = [];
                 Object.keys(userObject).forEach((key) => {
+                    userObject[key].id = key;
                     jobs.push(userObject[key]);
                 });
-                resolve(jobs[0]);
+                resolve(jobs);
             })
             .error((error) => {
                 reject(error);
@@ -44,5 +45,17 @@ app.factory("JobFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    return{addJob: addJob, getJob: getJob};
+    let getSingleJob = function(selectedJobId){
+        return $q((resolve, reject)=>{
+            $http.get(`${FIREBASE_CONFIG.databaseURL}/jobs/${selectedJobId}.json`)
+            .success(function(getSingleJobResponse){
+                resolve(getSingleJobResponse);
+            })
+            .error(function(getSingleJobError){
+                reject(getSingleJobError);
+            });
+        });
+    };
+
+    return{addJob: addJob, getJobs: getJobs};
 });

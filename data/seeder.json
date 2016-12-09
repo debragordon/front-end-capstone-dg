@@ -54,6 +54,7 @@
         },
         "job1": {
             "title": "Longterm Demo Vocalist Needed (Male)",
+            "description": "we have a great studio and we need your talent",
             "pay": "$125",
             "numberTalentNeeded": 1,
             "gender": "male",
