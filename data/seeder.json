@@ -70,21 +70,26 @@
     "users": {
         "user0": {
             "uid": "c3WqXleYGhZqYHe7au3rFEwJB142",
-            "username": "singergirl",
             "firstName": "Jane",
             "lastName": "Doe",
+            "telephone": "1-555-999-5958",
+            "yearsInBusiness": 5,
             "talent": true
         },
         "user1": {
             "uid": "MlZzx3rL2cYLUuk9bziclfkM3Vj2",
-            "username": "countryboy",
-            "firstName": "Bill",
+            "firstName": "Bob",
             "lastName": "Smith",
+            "telephone": "1-555-999-5958",
+            "yearsInBusiness": 4,
             "talent": true
         },
         "user2": {
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2",
-            "username": "engineergod",
+            "firstName": "Jack",
+            "lastName": "Johnson",
+            "telephone": "1-555-999-5958",
+            "yearsInBusiness": 10,
             "talent": false
         }
     }
