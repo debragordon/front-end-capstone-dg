@@ -7,9 +7,11 @@
         <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body ng-app="MusicMatcher" ng-cloak>
-        <div class="row">
-            <div class="col-xs-offset-2 col-xs-8" ng-view></div>
-        </div>
+  <div ng-include="'./partials/nav.html'"></div>
+
+  <div class="row">
+    <div class="col-xs-offset-2 col-xs-8" ng-view></div>
+  </div>
 
 <!-- JS files -->
   <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
@@ -23,8 +25,13 @@
 <!-- FACTORIES -->
   <script src="/javascripts/factories/AuthFactory.js" type="text/javascript" charset="utf-8" async defer></script>
   <script src="/javascripts/factories/UserFactory.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/javascripts/factories/JobFactory.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/javascripts/factories/ServicesFactory.js" type="text/javascript" charset="utf-8" async defer></script>
 <!-- CONTROLLERS -->
   <script src="/javascripts/controllers/AuthCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
   <script src="/javascripts/controllers/NavCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/javascripts/controllers/JobDetailCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/javascripts/controllers/TalentHomeCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/javascripts/controllers/AllJobsCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>

@@ -1,0 +1,91 @@
+{
+    "services": {
+        "service0": {
+            "title": "Professional Singer for Hire",
+            "gender": "female",
+            "locationCity": "Franklin",
+            "locationState": "TN",
+            "zipCode": 37064,
+            "rate": "$200",
+            "skillsOffered": "lead vocals, bgvs, voice over",
+            "genresOffered": "country, pop, gospel, christian, jazz",
+            "readMusic": true,
+            "uid": "c3WqXleYGhZqYHe7au3rFEwJB142"
+        },
+        "service1": {
+            "title": "Gator",
+            "gender": "male",
+            "locationCity": "Nashville",
+            "locationState": "TN",
+            "zipCode": 37221,
+            "rate": "$175",
+            "skillsOffered": "lead vocals, bgvs",
+            "genresOffered": "country, rock, gospel",
+            "readMusic": false,
+            "uid": "MlZzx3rL2cYLUuk9bziclfkM3Vj2"
+        },
+        "service2": {
+            "title": "Professional Voiceover Artist At Your Service",
+            "gender": "female",
+            "locationCity": "Franklin",
+            "locationState": "TN",
+            "zipCode": 37064,
+            "rate": "$150",
+            "skillsOffered": "voice over",
+            "genresOffered": "country, pop, gospel, christian, jazz",
+            "readMusic": false,
+            "uid": "c3WqXleYGhZqYHe7au3rFEwJB142"
+        }
+    },
+    "jobs": {
+        "job0": {
+            "title": "Longterm Demo Vocalist Needed (Female)",
+            "description": "we have a great studio and we need your talent",
+            "pay": "$125",
+            "numberTalentNeeded": 1,
+            "gender": "female",
+            "musicGenre": "country",
+            "skillNeededMain": "lead vocals, bgvs",
+            "readMusicRequired": "no",
+            "locationCity": "Nashville",
+            "locationState": "TN",
+            "zipCode": 37221,
+            "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
+        },
+        "job1": {
+            "title": "Longterm Demo Vocalist Needed (Male)",
+            "description": "we have a great studio and we need your talent",
+            "pay": "$125",
+            "numberTalentNeeded": 1,
+            "gender": "male",
+            "musicGenre": "country",
+            "skillNeededMain": "lead vocals, bgvs",
+            "readMusicRequired": true,
+            "locationCity": "Franklin",
+            "locationState": "TN",
+            "zipCode": 37064,
+            "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
+        }
+    },
+    "users": {
+        "user0": {
+            "uid": "c3WqXleYGhZqYHe7au3rFEwJB142",
+            "username": "singergirl",
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "talent": true
+        },
+        "user1": {
+            "uid": "MlZzx3rL2cYLUuk9bziclfkM3Vj2",
+            "username": "countryboy",
+            "firstName": "Bill",
+            "lastName": "Smith",
+            "talent": true
+        },
+        "user2": {
+            "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2",
+            "username": "engineergod",
+            "talent": false
+        }
+    }
+}

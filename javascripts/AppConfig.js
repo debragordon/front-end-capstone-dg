@@ -34,6 +34,45 @@ app.config(function($routeProvider) {
             controller: 'TalentHomeCtrl',
             resolve: {isAuth}
         })
+        .when('/talent/jobs', {
+            templateUrl: 'partials/all-jobs.html',
+            controller: 'AllJobsCtrl',
+            resolve: {isAuth}
+        })
+        .when('/talent/jobs/:id', {
+            templateUrl: 'partials/job-detail.html',
+            controller: 'JobDetailCtrl',
+            resolve: {isAuth}
+        })
+        .when('/talent/myjobs', {
+            templateUrl: 'partials/my-jobs.html',
+            controller: 'MyJobsCtrl',
+            resolve: {isAuth}
+        })
+        .when('/talent/services', {
+            templateUrl: 'partials/all-services.html',
+            controller: 'ServicesCtrl',
+            resolve: {isAuth}
+        })
+        .when('/talent/services/:id', {
+            templateUrl: 'partials/service-detail.html',
+            controller: 'ServiceDetailCtrl',
+            resolve: {isAuth}
+        })
+        .when('/talent/services/:id/edit', {
+            templateUrl: 'partials/service-edit.html',
+            controller: 'ServiceEditCtrl',
+            resolve: {isAuth}
+        })
+        .when('/talent/profile/:id', {
+            templateUrl: 'partials/profile-view.html',
+            controller: 'ProfileViewCtrl',
+            resolve: {isAuth}
+        })
+        .when('/talent/profile/:id/edit', {
+            templateUrl: 'partials/profile-edit.html',
+            controller: 'ProfileEditCtrl',
+            resolve: {isAuth}
+        })
         .otherwise('/auth');
-
 });
