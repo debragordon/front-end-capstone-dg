@@ -14,6 +14,7 @@ app.controller('AuthCtrl', function($scope, $location, $rootScope, AuthFactory, 
         AuthFactory.logout();
         $rootScope.user = {};
         $location.url("/auth");
+
     }
 
     let logMeIn = function(loginStuff) {

@@ -8,5 +8,4 @@ app.controller("TalentHomeCtrl", function ($scope, $routeParams, JobFactory){
     $scope.jobs = jobList;
   });
 
-
 });

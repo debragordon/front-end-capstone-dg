@@ -35,5 +35,29 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    return{addUser: addUser, getUser: getUser};
+    let editUser = (editProfile) => {
+        console.log("factory edit response", editProfile);
+        return $q((resolve, reject)=>{
+          $http.put(`${FIREBASE_CONFIG.databaseURL}/users/${editProfile.id}.json`, JSON.stringify({
+            firstName: editProfile.firstName,
+            lastName: editProfile.lastName,
+            telephone: editProfile.telephone,
+            city: editProfile.city,
+            state: editProfile.state,
+            yearsInBusiness: editProfile.yearsInBusiness,
+            professionalBio: editProfile.professionalBio,
+            primaryGenre: editProfile.primaryGenre,
+            secondaryGenre: editProfile.secondaryGenre
+            })
+          )
+            .success(function(editResponse){
+              resolve(editResponse);
+            })
+            .error(function(editError){
+              reject(editError);
+            });
+        });
+    };
+
+    return{addUser: addUser, getUser: getUser, editUser: editUser};
 });
