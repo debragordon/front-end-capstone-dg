@@ -1,1 +1,24 @@
-<h6>This will be a view the user profile</h6>
+<div class="row">
+  <div class="col-sm-12 text-center">{{selectedUser.firstName}} {{selectedUser.lastName}}</div>
+</div>
+<div class="row">
+  <div class="col-sm-12 text-center">{{selectedUser.city}}, {{selectedUser.state}}</div>
+</div>
+<div class="row">
+  <div class="col-sm-12 text-center">Telephone: {{selectedUser.telephone}}</div>
+</div>
+<div class="row">
+  <div class="col-sm-12 text-center">Years in the business: {{selectedUser.yearsInBusiness}}</div>
+</div>
+<div class="row">
+  <div class="col-sm-12 text-center">Primary Genre: {{selectedUser.primaryGenre}}</div>
+</div>
+<div class="row">
+  <div class="col-sm-12 text-center">Secondary Genre: {{selectedUser.secondaryGenre}}</div>
+</div>
+<div class="row">
+  <div class="col-sm-12 text-center">Professional Bio: {{selectedUser.professionalBio}} </div>
+</div>
+<div class="row">
+  <div class="col-sm-12 text-center"><a ng-href="#/talent/profile/edit" class="btn btn-primary" type="">Edit Profile</a></div>
+</div>

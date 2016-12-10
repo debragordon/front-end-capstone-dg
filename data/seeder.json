@@ -70,21 +70,40 @@
     "users": {
         "user0": {
             "uid": "c3WqXleYGhZqYHe7au3rFEwJB142",
-            "username": "singergirl",
             "firstName": "Jane",
             "lastName": "Doe",
+            "telephone": "1-555-999-5958",
+            "city": "Hendersonville",
+            "state": "TN",
+            "yearsInBusiness": 5,
+            "professionalBio": "I have been in this forever, I'm amazing.  You should hire me.",
+            "primaryGenre": "Country",
+            "secondaryGenre": "Pop",
             "talent": true
         },
         "user1": {
             "uid": "MlZzx3rL2cYLUuk9bziclfkM3Vj2",
-            "username": "countryboy",
-            "firstName": "Bill",
+            "firstName": "Bob",
             "lastName": "Smith",
+            "telephone": "1-555-999-5958",
+            "city": "Nashville",
+            "state": "TN",
+            "yearsInBusiness": 4,
+            "professionalBio": "I have been in this forever, I'm amazing.  You should hire me.",
+            "primaryGenre": "Country",
+            "secondaryGenre": "Rock",
             "talent": true
         },
         "user2": {
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2",
-            "username": "engineergod",
+            "firstName": "Jack",
+            "lastName": "Johnson",
+            "telephone": "1-555-999-5958",
+            "city": "Nashville",
+            "state": "TN",
+            "yearsInBusiness": 10,
+            "professionalBio": "I have been in this forever, I'm amazing.  You should work with me.",
+            "primaryGenre": null,
             "talent": false
         }
     }
