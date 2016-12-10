@@ -1,7 +1,11 @@
 "use strict";
 
 app.controller("AllServicesCtrl", function ($scope, $routeParams, ServiceFactory){
+  $scope.services = [];
 
-  console.log("route connected");
+  ServiceFactory.getServices().then((serviceList)=>{
+    console.log("serviceList", serviceList);
+    $scope.services = serviceList;
+  });
 
 });

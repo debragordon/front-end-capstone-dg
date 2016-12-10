@@ -1,1 +1,23 @@
-<h6>This will be a view of all the user's services</h6>
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-4" ng-repeat="service in services">
+      <div class="card card-block">
+        <h3 class="card-title">{{service.title}}</h3>
+        <p class="card-text">Gender: {{service.gender}}</p>
+        <p class="card-text">{{service.locationCity}}, {{service.locationState}} {{service.zipCode}}</p>
+        <p class="card-text">Service Rate/hour: {{service.rate}}</p>
+        <p class="card-text">Services Offered: {{service.skillsOffered}}</p>
+        <p class="card-text">Preferred Genres: {{service.genresOffered}}</p>
+        <a ng-href="#/talent/services/{{service.id}}" class="btn btn-primary">view {{service.id}}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <a ng-href="#/talent/services" class="btn btn-primary">VIEW ALL</a>
+    </div>
+  </div>
+
+</div>

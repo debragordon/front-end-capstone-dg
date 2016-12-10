@@ -1,21 +1,20 @@
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 text-center" ng-repeat="job in jobs">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="card card-block">
-              <h3 class="card-title">{{job.title}}</h3>
-              <p class="card-text">{{job.description}}</p>
-              <p class="card-text">In need of a {{job.gender}}</p>
-              <a ng-href="#/talent/jobs/{{job.id}}" class="btn btn-primary">view {{job.id}}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 text-center">
-        <button class="btn btn-primary">VIEW ALL</button>
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-4" ng-repeat="job in jobs">
+      <div class="card card-block">
+        <h3 class="card-title">{{job.title}}</h3>
+        <p class="card-text">{{job.description}}</p>
+        <p class="card-text">In need of a {{job.gender}}</p>
+        <a ng-href="#/talent/jobs/{{job.id}}" class="btn btn-primary">view {{job.id}}</a>
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <a ng-href="#/talent/jobs" class="btn btn-primary">VIEW ALL</a>
+    </div>
+  </div>
+
+</div>
