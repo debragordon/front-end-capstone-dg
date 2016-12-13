@@ -2,6 +2,8 @@
 
 app.controller("ServiceEditCtrl", function ($scope, $routeParams, ServiceFactory){
 
-  console.log("route connected");
+  // $scope.updateThisService = ()=>{
+  //   ServiceFactory.
+  // }
 
 });
