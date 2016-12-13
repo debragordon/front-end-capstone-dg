@@ -52,6 +52,7 @@ app.factory("ServiceFactory", function($q, $http, $rootScope, FIREBASE_CONFIG) {
         return $q((resolve, reject)=>{
             $http.get(`${FIREBASE_CONFIG.databaseURL}/services/${selectedServiceId}.json`)
             .success(function(getSingleServiceResponse){
+                getSingleServiceResponse.id = selectedServiceId;
                 resolve(getSingleServiceResponse);
             })
             .error(function(getSingleServiceError){
@@ -62,7 +63,7 @@ app.factory("ServiceFactory", function($q, $http, $rootScope, FIREBASE_CONFIG) {
 
     let editService = (serviceToUpdate) => {
         return $q((resolve, reject) => {
-            $http.put(`${FIREBASE_CONFIG.databaseURL}/services.json`,
+            $http.put(`${FIREBASE_CONFIG.databaseURL}/services/${serviceToUpdate.id}.json`,
                 JSON.stringify({
                     title: serviceToUpdate.title,
                     detail: serviceToUpdate.detail,

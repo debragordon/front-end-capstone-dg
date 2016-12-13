@@ -55,12 +55,17 @@ app.config(function($routeProvider) {
             controller: 'AllServicesCtrl',
             resolve: {isAuth}
         })
+        .when('/talent/services/add', {
+            templateUrl: 'partials/service-edit.html',
+            controller: 'ServiceAddCtrl',
+            resolve: {isAuth}
+        })
         .when('/talent/services/view/:id', {
             templateUrl: 'partials/service-detail.html',
             controller: 'ServiceDetailCtrl',
             resolve: {isAuth}
         })
-        .when('/talent/services/edit', {
+        .when('/talent/services/edit/:id', {
             templateUrl: 'partials/service-edit.html',
             controller: 'ServiceEditCtrl',
             resolve: {isAuth}

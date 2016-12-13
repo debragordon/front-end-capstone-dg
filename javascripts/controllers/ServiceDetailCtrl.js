@@ -8,7 +8,6 @@ app.controller("ServiceDetailCtrl", function ($scope, $routeParams, ServiceFacto
   console.log("serviceId", serviceId);
 
   ServiceFactory.getSingleService(serviceId).then(function(oneService){
-    oneService.id = serviceId;
     console.log("oneService", oneService);
     $scope.selectedService = oneService;
   });

@@ -1,1 +1,26 @@
-<h6>This will be a view of all the user's jobs</h6>
+<div class="container">
+
+  <div class="row text-center">
+    <h2>Interested Jobs</h2>
+    <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs">
+      <div class="card card-block">
+        <h3 class="card-title">Title: {{interestedJob.title}}</h3>
+        <a ng-href="#/" class="btn btn-primary">View {{interestedJob.id}} Details</a>
+        <a ng-click="" class="btn btn-primary">Remove Interest</a>
+        <a ng-click="" class="btn btn-warning">Complete Job</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row text-center">
+    <h2>Completed Jobs</h2>
+    <div class="col-sm-4" ng-repeat="completedJob in completedJobs">
+      <div class="card card-block">
+        <h3 class="card-title">Title: {{completedJob.title}}</h3>
+        <a ng-href="#/" class="btn btn-primary">View {{completedJob.id}} Details</a>
+        <a ng-click="" class="btn btn-warning">Delete Job</a>
+      </div>
+    </div>
+  </div>
+
+</div>
