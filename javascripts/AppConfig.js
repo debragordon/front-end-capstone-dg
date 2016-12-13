@@ -50,17 +50,22 @@ app.config(function($routeProvider) {
             controller: 'MyJobsCtrl',
             resolve: {isAuth}
         })
-        .when('/talent/services', {
+        .when('/talent/services/all', {
             templateUrl: 'partials/all-services.html',
             controller: 'AllServicesCtrl',
             resolve: {isAuth}
         })
-        .when('/talent/services/:id', {
+        .when('/talent/services/add', {
+            templateUrl: 'partials/service-edit.html',
+            controller: 'ServiceAddCtrl',
+            resolve: {isAuth}
+        })
+        .when('/talent/services/view/:id', {
             templateUrl: 'partials/service-detail.html',
             controller: 'ServiceDetailCtrl',
             resolve: {isAuth}
         })
-        .when('/talent/services/:id/edit', {
+        .when('/talent/services/edit/:id', {
             templateUrl: 'partials/service-edit.html',
             controller: 'ServiceEditCtrl',
             resolve: {isAuth}
