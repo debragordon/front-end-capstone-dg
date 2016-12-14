@@ -293,6 +293,16 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         }
     },
+    "interests": {
+        "interest0": {
+            "jobId": "job3",
+            "uid": "c3WqXleYGhZqYHe7au3rFEwJB142"
+        },
+        "interest1": {
+            "jobId": "job3",
+            "uid": "MlZzx3rL2cYLUuk9bziclfkM3Vj2"
+        }
+    },
     "users": {
         "user0": {
             "uid": "c3WqXleYGhZqYHe7au3rFEwJB142",

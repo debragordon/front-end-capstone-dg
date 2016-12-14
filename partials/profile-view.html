@@ -1,11 +1,11 @@
-<div class="row">
-  <div class="col-sm-12 text-center">{{selectedUser.firstName}} {{selectedUser.lastName}}</div>
+<div class="row" >
+  <div class="col-sm-12 text-center" ng-show="selectedUser.firstName">{{selectedUser.firstName}} {{selectedUser.lastName}}</div>
 </div>
 <div class="row">
   <div class="col-sm-12 text-center">{{selectedUser.city}}, {{selectedUser.state}}</div>
 </div>
 <div class="row">
-  <div class="col-sm-12 text-center">Telephone: {{selectedUser.telephone}}</div>
+  <div class="col-sm-12 text-center" ng-show="selectedUser.telephone">Telephone: {{selectedUser.telephone}}</div>
 </div>
 <div class="row">
   <div class="col-sm-12 text-center">Years in the business: {{selectedUser.yearsInBusiness}}</div>
