@@ -1,11 +1,10 @@
 <div class="container">
 
   <div class="row">
-    <div class="col-sm-4" ng-repeat="job in jobs">
+    <div class="col-sm-2" ng-repeat="job in jobs">
       <div class="card card-block">
-        <h3 class="card-title">{{job.title}}</h3>
-        <p class="card-text">{{job.description}}</p>
-        <p class="card-text">In need of a {{job.gender}}</p>
+        <h4 class="card-title">{{job.title}}</h4>
+        <p class="card-text">{{job.locationCity}}, {{job.locationState}}</p>
         <a ng-href="#/talent/jobs/{{job.id}}" class="btn btn-primary">view {{job.id}}</a>
       </div>
     </div>
