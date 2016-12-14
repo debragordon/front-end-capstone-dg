@@ -1,33 +1,37 @@
-<div class="row">
-  <div class="col-sm-12 text-center">Job Title: {{selectedJob.title}}</div>
-</div>
-<div class="row">
-  <div class="col-sm-12 text-center">Job Pays: {{selectedJob.pay}}</div>
-</div>
-<div class="row">
-  <div class="col-sm-12 text-center">Number of Pros Needed: {{selectedJob.numberTalentNeeded}}</div>
-</div>
-<div class="row">
-  <div class="col-sm-12 text-center">Gender: {{selectedJob.gender}}</div>
-</div>
-<div class="row">
-  <div class="col-sm-12 text-center">Music Genre: {{selectedJob.musicGenre}}</div>
-</div>
-<div class="row">
-  <div class="col-sm-12 text-center">Skill(s) Needed: {{selectedJob.skillNeededMain}}</div>
-</div>
-<div class="row">
-  <div class="col-sm-12 text-center">Ability to Read Music Required: {{selectedJob.readMusicRequired}}</div>
-</div>
-<div class="row">
-  <div class="col-sm-12 text-center">{{selectedJob.locationCity}}, {{selectedJob.locationState}}</div>
-</div>
-<div class="row">
-  <div class="col-sm-12 text-center"><a class="btn btn-primary" type="" ng-click="showInterest(selectedJob)" ng-show="!interestId">Show Interest</a></div>
-</div>
-<div class="row">
-  <div class="col-sm-12 text-center"><a class="btn btn-primary" type="" ng-click="removeInterest(selectedJob)" ng-show="interestId">Remove Interest</a></div>
-</div>
-<div class="row">
-  <div class="col-sm-12 text-center"><a class="btn btn-primary" type="" ng-href="#/talent/jobs">Back To Jobs</a></div>
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-12 text-center">Job Title: {{selectedJob.title}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">Job Pays: {{selectedJob.pay}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">Number of Pros Needed: {{selectedJob.numberTalentNeeded}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">Gender: {{selectedJob.gender}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">Music Genre: {{selectedJob.musicGenre}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">Skill(s) Needed: {{selectedJob.skillNeededMain}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">Ability to Read Music Required: {{selectedJob.readMusicRequired}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">{{selectedJob.locationCity}}, {{selectedJob.locationState}}</div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center"><a class="btn btn-success" type="" ng-click="showInterest(selectedJob)" ng-show="!interestId"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class="note">Show Interest</p></a></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center"><a class="btn btn-danger" type="" ng-click="removeInterest(selectedJob)" ng-show="interestId"><i class="fa fa-minus-circle" aria-hidden="true"></i><p class="note"> Remove Interest</p></a></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center"><a class="btn btn-primary" type="" ng-href="#/talent/jobs"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i><p class="note"> back</p></a></div>
+  </div>
+
 </div>

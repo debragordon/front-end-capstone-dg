@@ -9,15 +9,15 @@
         <p class="card-text">Service Rate/hour: {{service.rate}}</p>
         <p class="card-text">Services Offered: {{service.skillsOffered}}</p>
         <p class="card-text">Preferred Genres: {{service.genresOffered}}</p>
-        <a ng-href="#/talent/services/view/{{service.id}}" class="btn btn-primary">view {{service.id}}</a>
-        <a ng-click="deleteThisService(service.id)" class="btn btn-warning">delete {{service.id}}</a>
+        <a ng-href="#/talent/services/view/{{service.id}}" class="btn btn-warning"><i class="fa fa-eye" aria-hidden="true"></i><p class="note"> view</p></a>
+        <a ng-click="deleteThisService(service.id)" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
       </div>
     </div>
   </div>
 
   <div class="row">
     <div class="col-sm-12 text-center">
-      <a ng-href="#/talent/services/add" class="btn btn-primary">Add New</a>
+      <a ng-href="#/talent/services/add" class="btn btn-primary"><i class="fa fa-plus-circle" aria-hidden="true"></i><p clas="note"> new</p></a>
     </div>
   </div>
 

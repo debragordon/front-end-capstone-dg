@@ -1,8 +1,8 @@
  <div class="container col-xs-6 col-xs-offset-3">
     <div class="row">
-        <button class="btn btn-info col-xs-4" ng-click="setLoginContainer()">Login</button>
-        <button class="btn btn-success col-xs-4" ng-click="setRegisterContainer()">Register</button>
-        <button class="btn btn-primary col-xs-4" ng-click="setGoogleLoginContainer()">Google</button>
+        <button class="btn btn-info col-xs-4" ng-click="setLoginContainer()"><i class="fa fa-sign-out" aria-hidden="true"></i> Login</button>
+        <button class="btn btn-success col-xs-4" ng-click="setRegisterContainer()"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Register</button>
+        <button class="btn btn-primary col-xs-4" ng-click="setGoogleLoginContainer()"><i class="fa fa-google" aria-hidden="true"></i> Google</button>
     </div>
         <div class="row">
         <form ng-show="loginContainer">
@@ -15,7 +15,7 @@
                 <input type="password" class="col-xs-offset-1 col-xs-10" placeholder="Password" ng-model="login.password" required autofocus>
             </div>
             <div class="form-group">
-                <a class="btn btn-lg btn-info col-xs-offset-1 col-xs-10" ng-click="loginUser(login)">Submit Login</a>
+                <a class="btn btn-lg btn-info col-xs-offset-1 col-xs-10" ng-click="loginUser(login)"><i class="fa fa-sign-out" aria-hidden="true"></i> Submit Login</a>
             </div>
         </form>
         <form ng-show="registerContainer">
@@ -32,12 +32,12 @@
                 <input type="text" class="col-xs-offset-1 col-xs-10" placeholder="Username" ng-model="register.username" required autofocus>
             </div>
             <div class="form-group">
-                <a class="btn btn-lg btn-success col-xs-offset-1 col-xs-10" ng-click="registerUser(register)">Submit Registeration</a>
+                <a class="btn btn-lg btn-success col-xs-offset-1 col-xs-10" ng-click="registerUser(register)"><i class="fa fa-sign-out" aria-hidden="true"></i><i class="fa fa-hand-o-right" aria-hidden="true"></i> Submit Registeration</a>
             </div>
         </form>
         <form ng-show="googleLoginContainer">
             <div class="form-group">
-                <a class="btn btn-lg btn-primary col-xs-offset-1 col-xs-10" ng-click="googleLoginUser(register)">Google Login</a>
+                <a class="btn btn-lg btn-primary col-xs-offset-1 col-xs-10" ng-click="googleLoginUser(register)"><i class="fa fa-google" aria-hidden="true"></i> Google Login</a>
             </div>
         </form>
     </div>
