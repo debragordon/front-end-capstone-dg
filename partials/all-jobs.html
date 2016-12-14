@@ -1,23 +1,23 @@
 <div class="row">
     <div class="col-xs-6 col-xs-offset-3">
         <div class="input-group">
-            <span class="input-group-btn">
-                <button class="btn btn-default">
-                    <i class="fa fa-search"></i>
-                </button>
-            </span>
-            <input type="text" class="form-control" placeholder="Search for ..." ng-model="searchText">
+                <span class="input-group-btn">
+                    <button class="btn btn-default">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+                <input type="text" class="form-control" placeholder="Search Location, Music Genre, Skills Needed ..." ng-model="searchText">
         </div>
     </div>
 </div>
 
 <div class="row">
     <div ng-repeat="job in jobs | filter: searchText">
-    <div class="col-sm-4">
+
+    <div class="col-sm-3">
       <div class="card card-block">
-        <h3 class="card-title">Job Title: {{job.title}}</h3>
-        <p class="card-text">Job Description: {{job.description}}</p>
-        <p class="card-text">In need of a {{job.gender}}</p>
+        <h4 class="card-title">{{job.title}}</h4>
+        <p class="card-text">{{job.locationCity}}, {{job.locationState}}</p>
         <a ng-href="#/talent/jobs/{{job.id}}" class="btn btn-primary">view {{job.id}}</a>
       </div>
     </div>

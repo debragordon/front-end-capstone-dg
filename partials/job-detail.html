@@ -23,7 +23,10 @@
   <div class="col-sm-12 text-center">{{selectedJob.locationCity}}, {{selectedJob.locationState}}</div>
 </div>
 <div class="row">
-  <div class="col-sm-12 text-center"><a class="btn btn-primary" type="" ng-click="showInterest()">Show Interest</a></div>
+  <div class="col-sm-12 text-center"><a class="btn btn-primary" type="" ng-click="showInterest(selectedJob)" ng-show="!interestId">Show Interest</a></div>
+</div>
+<div class="row">
+  <div class="col-sm-12 text-center"><a class="btn btn-primary" type="" ng-click="removeInterest(selectedJob)" ng-show="interestId">Remove Interest</a></div>
 </div>
 <div class="row">
   <div class="col-sm-12 text-center"><a class="btn btn-primary" type="" ng-href="#/talent/jobs">Back To Jobs</a></div>
