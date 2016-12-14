@@ -10,7 +10,7 @@ app.controller("ServiceEditCtrl", function ($scope, $routeParams, $location, Ser
     $scope.selectedService = serviceToEdit;
   });
 
- $scope.updateThisService = function(){
+  $scope.updateThisService = function(){
     console.log("selectedService", $scope.selectedService);
     ServiceFactory.editService($scope.selectedService).then(()=>{
       $location.url(`/talent/services/view/${serviceId}`);
