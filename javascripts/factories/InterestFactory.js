@@ -55,8 +55,9 @@ app.factory("InterestFactory", function($q, $http, FIREBASE_CONFIG) {
     };
 
     let deleteInterest = (interestId) => {
+        console.log("interestId", interestId);
         return $q((resolve, reject)=>{
-            $http.delete(`${FIREBASE_CONFIG.databaseURL}/services/${interestId}.json`)
+            $http.delete(`${FIREBASE_CONFIG.databaseURL}/interests/${interestId}.json`)
             .success(function(deleteInterestResponse){
                 resolve(deleteInterestResponse);
             })

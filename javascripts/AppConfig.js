@@ -35,11 +35,6 @@ app.config(function($routeProvider) {
             controller: 'TalentHomeCtrl',
             resolve: {isAuth}
         })
-        .when('/talent/jobs', {
-            templateUrl: 'partials/all-jobs.html',
-            controller: 'AllJobsCtrl',
-            resolve: {isAuth}
-        })
         .when('/talent/jobs/:id', {
             templateUrl: 'partials/job-detail.html',
             controller: 'JobDetailCtrl',

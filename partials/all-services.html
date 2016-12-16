@@ -3,12 +3,12 @@
   <div class="row">
     <div class="col-sm-4" ng-repeat="service in myServices">
       <div class="card card-block">
-        <h3 class="card-title">{{service.title}}</h3>
-        <p class="card-text">Gender: {{service.gender}}</p>
-        <p class="card-text">{{service.locationCity}}, {{service.locationState}} {{service.zipCode}}</p>
-        <p class="card-text">Service Rate/hour: {{service.rate}}</p>
-        <p class="card-text">Services Offered: {{service.skillsOffered}}</p>
-        <p class="card-text">Preferred Genres: {{service.genresOffered}}</p>
+        <h3 class="card-title" ng-show="service.title">{{service.title}}</h3>
+        <p class="card-text" ng-show="service.gender">Gender: {{service.gender}}</p>
+        <p class="card-text" ng-show="service.locationCity">{{service.locationCity}}, {{service.locationState}} {{service.zipCode}}</p>
+        <p class="card-text" ng-show="service.rate">Service Rate/hour: {{service.rate}}</p>
+        <p class="card-text" ng-show="service.skillsOffered">Services Offered: {{service.skillsOffered}}</p>
+        <p class="card-text" ng-show="service.genresOffered">Preferred Genres: {{service.genresOffered}}</p>
         <a ng-href="#/talent/services/view/{{service.id}}" class="btn btn-warning"><i class="fa fa-eye" aria-hidden="true"></i><p class="note"> view</p></a>
         <a ng-click="deleteThisService(service.id)" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
       </div>
