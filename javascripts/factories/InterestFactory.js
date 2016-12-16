@@ -61,7 +61,7 @@ app.factory("InterestFactory", function($q, $http, FIREBASE_CONFIG) {
           $http.put(`${FIREBASE_CONFIG.databaseURL}/interests/${editInterest.id}.json`, JSON.stringify({
                 jobId: editInterest.id,
                 uid: editInterest.uid,
-                isCompleted: false
+                isCompleted: editInterest.isCompleted
             })
           )
             .success(function(editResponse){
