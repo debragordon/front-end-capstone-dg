@@ -8,11 +8,10 @@ app.controller("TalentHomeCtrl", function ($scope, $routeParams, $rootScope, Job
     jobList.forEach(function(job){
       InterestFactory.getInterestsByJob(job.id).then(function(listOfInterests){
         console.log("listOfInterests", listOfInterests);
-        listOfInterests.forEach(function(job){
-          if ($rootScope.user.uid === job.uid) {
-            $scope.job.interested = true;
+        listOfInterests.forEach(function(interest){
+          if (interest.uid === $rootScope.user.uid) {
+            job.interested = true;
           }
-
         });
       });
     });

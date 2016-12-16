@@ -8,7 +8,8 @@ app.factory("InterestFactory", function($q, $http, FIREBASE_CONFIG) {
             $http.post(`${FIREBASE_CONFIG.databaseURL}/interests.json`,
                 JSON.stringify({
                   jobId: newInterest.id,
-                  uid: newInterest.uid
+                  uid: newInterest.uid,
+                  isCompleted: false
                 })
             )
             .success((storeInterestSuccess) => {
@@ -58,8 +59,9 @@ app.factory("InterestFactory", function($q, $http, FIREBASE_CONFIG) {
         console.log("factory edit response", editInterest);
         return $q((resolve, reject)=>{
           $http.put(`${FIREBASE_CONFIG.databaseURL}/interests/${editInterest.id}.json`, JSON.stringify({
-                  jobId: editInterest.id,
-                  uid: editInterest.uid
+                jobId: editInterest.id,
+                uid: editInterest.uid,
+                isCompleted: false
             })
           )
             .success(function(editResponse){

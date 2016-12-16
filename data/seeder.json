@@ -296,11 +296,13 @@
     "interests": {
         "interest0": {
             "jobId": "job3",
-            "uid": "c3WqXleYGhZqYHe7au3rFEwJB142"
+            "uid": "c3WqXleYGhZqYHe7au3rFEwJB142",
+            "isCompleted": false
         },
         "interest1": {
             "jobId": "job3",
-            "uid": "MlZzx3rL2cYLUuk9bziclfkM3Vj2"
+            "uid": "MlZzx3rL2cYLUuk9bziclfkM3Vj2",
+            "isCompleted": false
         }
     },
     "users": {
