@@ -22,10 +22,16 @@ app.controller("MyJobsCtrl", function ($scope, $routeParams, $rootScope, JobFact
 
     getAllInterests();
 
-    $scope.removeInterest = function(job){
+  $scope.removeInterest = function(job){
     console.log("job", job);
     InterestFactory.deleteInterest(job.interestId).then(function(){
       getAllInterests();
+    });
+  };
+
+  $scope.inputChange = function(job){
+    InterestFactory.editInterest(job).then(function(response){
+      console.log("ctrl inputChange response", response);
     });
   };
 });

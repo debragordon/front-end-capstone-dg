@@ -54,6 +54,23 @@ app.factory("InterestFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
+    let editInterest = function(editInterest){
+        console.log("factory edit response", editInterest);
+        return $q((resolve, reject)=>{
+          $http.put(`${FIREBASE_CONFIG.databaseURL}/interests/${editInterest.id}.json`, JSON.stringify({
+                  jobId: editInterest.id,
+                  uid: editInterest.uid
+            })
+          )
+            .success(function(editResponse){
+              resolve(editResponse);
+            })
+            .error(function(editError){
+              reject(editError);
+            });
+        });
+      };
+
     let deleteInterest = (interestId) => {
         console.log("interestId", interestId);
         return $q((resolve, reject)=>{
@@ -67,5 +84,5 @@ app.factory("InterestFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    return{addInterest: addInterest, getInterestsByJob: getInterestsByJob, getInterestsByUser: getInterestsByUser,deleteInterest: deleteInterest};
+    return{addInterest: addInterest, getInterestsByJob: getInterestsByJob, getInterestsByUser: getInterestsByUser, editInterest: editInterest, deleteInterest: deleteInterest};
 });

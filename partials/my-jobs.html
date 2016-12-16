@@ -2,14 +2,14 @@
 
   <div class="row text-center">
     <h2>Interested Jobs</h2>
-    <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs">
+    <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs | filter:{isCompleted:false} ">
       <div class="card card-block">
         <h3 class="card-title">Title: {{interestedJob.title}}</h3>
         <a ng-href="#/talent/jobs/{{interestedJob.jobId}}" class="btn btn-warning"><i class="fa fa-eye" aria-hidden="true"></i><p class="note"> view</p></a>
         <a ng-click="removeInterest(interestedJob)" class="btn btn-danger"><i class="fa fa-minus-circle" aria-hidden="true"></i><p class="note"> remove interest</p></a>
   <div class="form-check">
     <label class="form-check-label">
-      <input type="checkbox" class="form-check-input">
+      <input type="checkbox" class="form-check-input" ng-model="interestedJob.isCompleted" ng-change="inputChange(interestedJob)">
       Got the Job
     </label>
   </div>
@@ -19,10 +19,10 @@
 
   <div class="row text-center">
     <h2>Completed Jobs</h2>
-    <div class="col-sm-4" ng-repeat="completedJob in completedJobs">
+    <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs | filter:{isCompleted:true} ">
       <div class="card card-block">
-        <h3 class="card-title">Title: {{completedJob.title}}</h3>
-        <a ng-href="#/" class="btn btn-primary">View {{completedJob.id}} Details</a>
+        <h3 class="card-title">Title: {{interestedJob.title}}</h3>
+        <a ng-href="#/" class="btn btn-primary">View {{interestedJob.id}} Details</a>
         <a ng-click="" class="btn btn-warning">Delete Job</a>
       </div>
     </div>
