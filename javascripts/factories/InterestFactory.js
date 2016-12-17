@@ -8,7 +8,8 @@ app.factory("InterestFactory", function($q, $http, FIREBASE_CONFIG) {
             $http.post(`${FIREBASE_CONFIG.databaseURL}/interests.json`,
                 JSON.stringify({
                   jobId: newInterest.id,
-                  uid: newInterest.uid
+                  uid: newInterest.uid,
+                  isCompleted: false
                 })
             )
             .success((storeInterestSuccess) => {
@@ -54,9 +55,28 @@ app.factory("InterestFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    let deleteInterest = (interestId) => {
+    let editInterest = function(editInterest, currentUserId){
+        console.log("factory edit response", editInterest);
         return $q((resolve, reject)=>{
-            $http.delete(`${FIREBASE_CONFIG.databaseURL}/services/${interestId}.json`)
+          $http.put(`${FIREBASE_CONFIG.databaseURL}/interests/${editInterest.interestId}.json`, JSON.stringify({
+                jobId: editInterest.jobId,
+                uid: currentUserId,
+                isCompleted: editInterest.isCompleted
+            })
+          )
+            .success(function(editResponse){
+              resolve(editResponse);
+            })
+            .error(function(editError){
+              reject(editError);
+            });
+        });
+      };
+
+    let deleteInterest = (interestId) => {
+        console.log("interestId", interestId);
+        return $q((resolve, reject)=>{
+            $http.delete(`${FIREBASE_CONFIG.databaseURL}/interests/${interestId}.json`)
             .success(function(deleteInterestResponse){
                 resolve(deleteInterestResponse);
             })
@@ -66,5 +86,5 @@ app.factory("InterestFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    return{addInterest: addInterest, getInterestsByJob: getInterestsByJob, getInterestsByUser: getInterestsByUser,deleteInterest: deleteInterest};
+    return{addInterest: addInterest, getInterestsByJob: getInterestsByJob, getInterestsByUser: getInterestsByUser, editInterest: editInterest, deleteInterest: deleteInterest};
 });

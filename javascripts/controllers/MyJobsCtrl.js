@@ -5,19 +5,34 @@ app.controller("MyJobsCtrl", function ($scope, $routeParams, $rootScope, JobFact
     let currentUser = $rootScope.user.uid;
     $scope.interestedJobs = [];
 
-    InterestFactory.getInterestsByUser(currentUser).then(function(response){
-      let interestedPeopleArray = response;
-      interestedPeopleArray.forEach(function(person){
-        JobFactory.getSingleJob(person.jobId).then(function(jobDetails){
-          jobDetails.interestId = person.id;
-          $scope.interestedJobs.push(jobDetails);
+    let getAllInterests = function(){
+      $scope.interestedJobs = [];
+      InterestFactory.getInterestsByUser(currentUser).then(function(response){
+        let interestedPeopleArray = response;
+        interestedPeopleArray.forEach(function(jobILike){
+          JobFactory.getSingleJob(jobILike.jobId).then(function(jobDetails){
+            jobDetails.interestId = jobILike.id;
+            jobDetails.isCompleted = jobILike.isCompleted;
+            jobDetails.jobId = jobILike.jobId;
+            $scope.interestedJobs.push(jobDetails);
+          });
         });
+        console.log("interestedJobs", $scope.interestedJobs);
       });
-    });
+    };
 
-    $scope.removeInterest = function(job){
+    getAllInterests();
+
+  $scope.removeInterest = function(job){
+    console.log("job", job);
     InterestFactory.deleteInterest(job.interestId).then(function(){
-        $scope.interestedJobs.splice($scope.interestedJobs.indexOf(job),1);
+      getAllInterests();
+    });
+  };
+
+  $scope.inputChange = function(job){
+    InterestFactory.editInterest(job.currentUser).then(function(response){
+       getAllInterests();
     });
   };
 });

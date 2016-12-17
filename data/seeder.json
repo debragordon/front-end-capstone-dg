@@ -153,7 +153,7 @@
     },
     "jobs": {
         "job0": {
-            "title": "Longterm Demo Vocalist Needed (Female)",
+            "title": "Longterm Demo Vocalist Needed (Female) 1",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
             "numberTalentNeeded": 1,
@@ -167,7 +167,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job1": {
-            "title": "Longterm Demo Vocalist Needed (Male)",
+            "title": "Longterm Demo Vocalist Needed (Male) 2",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
             "numberTalentNeeded": 1,
@@ -181,7 +181,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job2": {
-            "title": "Longterm Demo Vocalist Needed (Female)",
+            "title": "Longterm Demo Vocalist Needed (Female) 3",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
             "numberTalentNeeded": 1,
@@ -195,7 +195,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job3": {
-            "title": "Longterm Demo Vocalist Needed (Male)",
+            "title": "Longterm Demo Vocalist Needed (Male) 4",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
             "numberTalentNeeded": 1,
@@ -209,7 +209,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job4": {
-            "title": "Longterm Demo Vocalist Needed (Female)",
+            "title": "Longterm Demo Vocalist Needed (Female) 5",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
             "numberTalentNeeded": 1,
@@ -223,7 +223,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job5": {
-            "title": "Longterm Demo Vocalist Needed (Male)",
+            "title": "Longterm Demo Vocalist Needed (Male) 6",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
             "numberTalentNeeded": 1,
@@ -237,7 +237,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job6": {
-            "title": "Longterm Demo Vocalist Needed (Female)",
+            "title": "Longterm Demo Vocalist Needed (Female) 7",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
             "numberTalentNeeded": 1,
@@ -251,7 +251,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job7": {
-            "title": "Longterm Demo Vocalist Needed (Male)",
+            "title": "Longterm Demo Vocalist Needed (Male) 8",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
             "numberTalentNeeded": 1,
@@ -265,7 +265,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job8": {
-            "title": "Longterm Demo Vocalist Needed (Female)",
+            "title": "Longterm Demo Vocalist Needed (Female) 9",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
             "numberTalentNeeded": 1,
@@ -279,7 +279,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job9": {
-            "title": "Longterm Demo Vocalist Needed (Male)",
+            "title": "Longterm Demo Vocalist Needed (Male) 10",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
             "numberTalentNeeded": 1,
@@ -296,11 +296,13 @@
     "interests": {
         "interest0": {
             "jobId": "job3",
-            "uid": "c3WqXleYGhZqYHe7au3rFEwJB142"
+            "uid": "c3WqXleYGhZqYHe7au3rFEwJB142",
+            "isCompleted": false
         },
         "interest1": {
             "jobId": "job3",
-            "uid": "MlZzx3rL2cYLUuk9bziclfkM3Vj2"
+            "uid": "MlZzx3rL2cYLUuk9bziclfkM3Vj2",
+            "isCompleted": false
         }
     },
     "users": {
