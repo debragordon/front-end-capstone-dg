@@ -55,12 +55,12 @@ app.factory("InterestFactory", function($q, $http, FIREBASE_CONFIG) {
         });
     };
 
-    let editInterest = function(editInterest){
+    let editInterest = function(editInterest, currentUserId){
         console.log("factory edit response", editInterest);
         return $q((resolve, reject)=>{
-          $http.put(`${FIREBASE_CONFIG.databaseURL}/interests/${editInterest.id}.json`, JSON.stringify({
-                jobId: editInterest.id,
-                uid: editInterest.uid,
+          $http.put(`${FIREBASE_CONFIG.databaseURL}/interests/${editInterest.interestId}.json`, JSON.stringify({
+                jobId: editInterest.jobId,
+                uid: currentUserId,
                 isCompleted: editInterest.isCompleted
             })
           )

@@ -12,6 +12,7 @@ app.controller("MyJobsCtrl", function ($scope, $routeParams, $rootScope, JobFact
         interestedPeopleArray.forEach(function(jobILike){
           JobFactory.getSingleJob(jobILike.jobId).then(function(jobDetails){
             jobDetails.interestId = jobILike.id;
+            jobDetails.isCompleted = jobILike.isCompleted;
             jobDetails.jobId = jobILike.jobId;
             $scope.interestedJobs.push(jobDetails);
           });
@@ -30,8 +31,8 @@ app.controller("MyJobsCtrl", function ($scope, $routeParams, $rootScope, JobFact
   };
 
   $scope.inputChange = function(job){
-    InterestFactory.editInterest(job).then(function(response){
-      console.log("ctrl inputChange response", response);
+    InterestFactory.editInterest(job.currentUser).then(function(response){
+       getAllInterests();
     });
   };
 });
