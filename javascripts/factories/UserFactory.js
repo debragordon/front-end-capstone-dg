@@ -52,6 +52,7 @@ app.factory("UserFactory", function($q, $http, FIREBASE_CONFIG) {
             professionalBio: editProfile.professionalBio,
             primaryGenre: editProfile.primaryGenre,
             secondaryGenre: editProfile.secondaryGenre,
+            image: editProfile.image,
             uid: editProfile.uid
             })
           )

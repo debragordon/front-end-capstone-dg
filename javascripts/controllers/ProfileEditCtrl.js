@@ -17,4 +17,5 @@ app.controller("ProfileEditCtrl", function ($scope, $routeParams, $location, Use
       $location.url("/talent/profile");
     });
   };
+
 });

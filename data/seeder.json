@@ -153,6 +153,7 @@
     },
     "jobs": {
         "job0": {
+            "image": "http://takelessons.com/blog/wp-content/uploads/2015/04/recording-studio-first-time.jpg",
             "title": "Longterm Demo Vocalist Needed (Female) 1",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
@@ -167,6 +168,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job1": {
+            "image": "http://www.voicecouncil.com/wp-content/uploads/male-singer-in-recording-studio.jpg",
             "title": "Longterm Demo Vocalist Needed (Male) 2",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
@@ -181,6 +183,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job2": {
+            "image": "http://takelessons.com/blog/wp-content/uploads/2015/04/recording-studio-first-time.jpg",
             "title": "Longterm Demo Vocalist Needed (Female) 3",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
@@ -195,6 +198,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job3": {
+            "image": "http://www.voicecouncil.com/wp-content/uploads/male-singer-in-recording-studio.jpg",
             "title": "Longterm Demo Vocalist Needed (Male) 4",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
@@ -209,6 +213,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job4": {
+            "image": "http://takelessons.com/blog/wp-content/uploads/2015/04/recording-studio-first-time.jpg",
             "title": "Longterm Demo Vocalist Needed (Female) 5",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
@@ -223,6 +228,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job5": {
+            "image": "http://www.voicecouncil.com/wp-content/uploads/male-singer-in-recording-studio.jpg",
             "title": "Longterm Demo Vocalist Needed (Male) 6",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
@@ -237,6 +243,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job6": {
+            "image": "http://takelessons.com/blog/wp-content/uploads/2015/04/recording-studio-first-time.jpg",
             "title": "Longterm Demo Vocalist Needed (Female) 7",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
@@ -251,6 +258,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job7": {
+            "image": "http://www.voicecouncil.com/wp-content/uploads/male-singer-in-recording-studio.jpg",
             "title": "Longterm Demo Vocalist Needed (Male) 8",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
@@ -265,6 +273,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job8": {
+            "image": "http://takelessons.com/blog/wp-content/uploads/2015/04/recording-studio-first-time.jpg",
             "title": "Longterm Demo Vocalist Needed (Female) 9",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
@@ -279,6 +288,7 @@
             "uid": "wz5NA8IDjuVS3jIqTN2M1o1RqHP2"
         },
         "job9": {
+            "image": "http://www.voicecouncil.com/wp-content/uploads/male-singer-in-recording-studio.jpg",
             "title": "Longterm Demo Vocalist Needed (Male) 10",
             "description": "we have a great studio and we need your talent",
             "pay": "$125",
@@ -317,6 +327,7 @@
             "professionalBio": "I have been in this forever, I'm amazing.  You should hire me.",
             "primaryGenre": "Country",
             "secondaryGenre": "Pop",
+            "image": "https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg",
             "talent": true
         },
         "user1": {
@@ -330,6 +341,7 @@
             "professionalBio": "I have been in this forever, I'm amazing.  You should hire me.",
             "primaryGenre": "Country",
             "secondaryGenre": "Rock",
+            "image": "https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg",
             "talent": true
         },
         "user2": {
@@ -342,6 +354,7 @@
             "yearsInBusiness": 10,
             "professionalBio": "I have been in this forever, I'm amazing.  You should work with me.",
             "primaryGenre": null,
+            "image": "https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg",
             "talent": false
         }
     }

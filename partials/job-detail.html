@@ -1,4 +1,35 @@
 <div class="container">
+  <div class="row">
+    <img class="col-sm-3 text-center" ng-show="selectedJob.image" ng-src="{{selectedJob.image}}">
+    <div class="col-sm-3">
+      <div>Job Title: {{selectedJob.title}}</div>
+      <div>{{selectedJob.locationCity}}, {{selectedJob.locationState}}</div>
+      <div>Job Pays: {{selectedJob.pay}}</div>
+      <div>Number of Pros Needed: {{selectedJob.numberTalentNeeded}}</div>
+      <div>Gender: {{selectedJob.gender}}</div>
+      <div>Music Genre: {{selectedJob.musicGenre}}</div>
+      <div>Skill(s) Needed: {{selectedJob.skillNeededMain}}</div>
+      <div>Ability to Read Music Required: {{selectedJob.readMusicRequired}}</div>
+      <div ng-show="!isCompleted">
+        <div class="row">
+          <div class="col-sm-12"><a class="btn btn-success" type="" ng-click="showInterest(selectedJob)" ng-show="!interestId"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class="note"> Show Interest</p></a></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12"><a class="btn btn-danger" type="" ng-click="removeInterest(selectedJob)" ng-show="interestId"><i class="fa fa-minus-circle" aria-hidden="true"></i><p class="note"> Remove Interest</p></a></div>
+        </div>
+      </div>
+      <div ng-show="isCompleted">
+        <div class="row">
+        <div class="col-sm-12"><a class="btn btn-success" type="" ng-click="showInterest(selectedJob)"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class="note"> View Your Jobs</p></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+<div class="container">
 
   <div class="row">
     <div class="col-sm-12 text-center">Job Title: {{selectedJob.title}}</div>
@@ -24,14 +55,18 @@
   <div class="row">
     <div class="col-sm-12 text-center">{{selectedJob.locationCity}}, {{selectedJob.locationState}}</div>
   </div>
-  <div class="row">
-    <div class="col-sm-12 text-center"><a class="btn btn-success" type="" ng-click="showInterest(selectedJob)" ng-show="!interestId"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class="note"> Show Interest</p></a></div>
+  <div ng-show="!isCompleted">
+    <div class="row">
+      <div class="col-sm-12 text-center"><a class="btn btn-success" type="" ng-click="showInterest(selectedJob)" ng-show="!interestId"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class="note"> Show Interest</p></a></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 text-center"><a class="btn btn-danger" type="" ng-click="removeInterest(selectedJob)" ng-show="interestId"><i class="fa fa-minus-circle" aria-hidden="true"></i><p class="note"> Remove Interest</p></a></div>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-sm-12 text-center"><a class="btn btn-danger" type="" ng-click="removeInterest(selectedJob)" ng-show="interestId"><i class="fa fa-minus-circle" aria-hidden="true"></i><p class="note"> Remove Interest</p></a></div>
+  <div ng-show="isCompleted">
+    <div class="row">
+    <div class="col-sm-12 text-center"><a class="btn btn-success" type="" ng-click="showInterest(selectedJob)"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class="note"> View Your Jobs</p></a></div>
+    </div>
   </div>
-<!--   <div class="row">
-    <div class="col-sm-12 text-center"><a class="btn btn-primary" type="" ng-href="#/talent/home"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i><p class="note"> back</p></a></div>
-  </div> -->
 
-</div>
+</div> -->

@@ -17,6 +17,7 @@ app.controller("JobDetailCtrl", function ($scope, $routeParams, $rootScope, $loc
           oneJob.users.push(userInfo);
           if (userInfo.uid === $rootScope.user.uid){
             $scope.interestId = person.id;
+            $scope.isCompleted = person.isCompleted;
           }
         });
       });

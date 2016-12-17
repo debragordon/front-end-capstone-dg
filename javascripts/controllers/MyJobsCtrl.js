@@ -4,6 +4,7 @@ app.controller("MyJobsCtrl", function ($scope, $routeParams, $rootScope, JobFact
 
     let currentUser = $rootScope.user.uid;
     $scope.interestedJobs = [];
+    let jobDetails = {};
 
     let getAllInterests = function(){
       $scope.interestedJobs = [];
@@ -31,8 +32,9 @@ app.controller("MyJobsCtrl", function ($scope, $routeParams, $rootScope, JobFact
   };
 
   $scope.inputChange = function(job){
-    InterestFactory.editInterest(job.currentUser).then(function(response){
+    InterestFactory.editInterest(job, currentUser).then(function(response){
        getAllInterests();
     });
+
   };
 });
