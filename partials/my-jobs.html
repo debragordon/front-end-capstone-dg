@@ -3,10 +3,10 @@
   <div class="row text-center">
     <h2>Interested Jobs</h2>
 <!--     <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs"> -->
-    <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs | filter:{isCompleted:false}">
+    <div class="col-sm-3" ng-repeat="interestedJob in interestedJobs | filter:{isCompleted:false}">
       <div class="card card-block">
-        <img class="col-sm-12" ng-show="interestedJob.image" ng-src="{{interestedJob.image}}">
-        <h5 class="card-title">Title: {{interestedJob.title}}</h5>
+        <img class="col-sm-12 bottomMarg" ng-show="interestedJob.image" ng-src="{{interestedJob.image}}">
+        <h5 class="card-title">{{interestedJob.title}}</h5>
         <a ng-href="#/talent/jobs/{{interestedJob.jobId}}" class="btn btn-warning"><i class="fa fa-eye" aria-hidden="true"></i><p class="note"> view</p></a>
         <a ng-click="removeInterest(interestedJob)" class="btn btn-danger"><i class="fa fa-minus-circle" aria-hidden="true"></i><p class="note"> remove interest</p></a>
   <div class="form-check">
@@ -22,9 +22,9 @@
   <div class="row text-center">
     <h2>Completed Jobs</h2>
 <!--     <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs}"> -->
-    <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs | filter:{isCompleted:true}">
+    <div class="col-sm-2" ng-repeat="interestedJob in interestedJobs | filter:{isCompleted:true}">
       <div class="card card-block">
-        <h5 class="card-title">Title: {{interestedJob.title}}</h5>
+        <h5 class="card-title">{{interestedJob.title}}</h5>
         <a ng-href="#/talent/jobs/{{interestedJob.jobId}}" class="btn btn-warning"><i class="fa fa-eye" aria-hidden="true"></i><p class="note"> view</p></a>
 <!--         <a ng-click="" class="btn btn-warning">Delete Job</a> -->
       </div>
