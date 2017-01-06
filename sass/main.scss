@@ -7,8 +7,13 @@ body {
   font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif;
 }
 
+.card {
+  // border: 1px solid #808080;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+}
 
-//remove from final
 .small {
   max-width: 70px;
 }
@@ -31,6 +36,19 @@ a {
   margin-bottom: 10px;
 }
 
+.card-title, .card-text, .clickThis {
+  margin-top: 10px;
+}
+
+.bottomMarg {
+  margin-bottom: 5px;
+}
+
+.cardPhoto {
+  width: 100%;
+  height: auto;
+}
+
 .none {
   text-decoration: none; /* no underline */
   color: #5bc0de;
@@ -39,4 +57,15 @@ a {
 
 .fa-music {
   color: #5bc0de;
+}
+
+.detail {
+  font-size: .75em;
+}
+
+.cardJob {
+  // border: 1px solid #808080;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
 }
