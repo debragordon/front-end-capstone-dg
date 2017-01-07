@@ -9,7 +9,7 @@
             <p>{{selectedJob.description}}</p>
             <div>{{selectedJob.locationCity}}, {{selectedJob.locationState}}</div>
           </div>
-          <div class="detail" ng-show="selectedJob.pay">Job Pays: {{selectedJob.pay}}</div>
+          <div class="detail" ng-show="selectedJob.pay">Gig Pays: {{selectedJob.pay}}</div>
           <div class="detail" ng-show="selectedJob.numberTalentNeeded">Number of Pros Needed: {{selectedJob.numberTalentNeeded}}</div>
           <div class="detail" ng-show="selectedJob.gender">Gender (if applicable): {{selectedJob.gender}}</div>
           <div class="detail" ng-show="selectedJob.musicGenre">Music Genre(s): {{selectedJob.musicGenre}}</div>
@@ -25,7 +25,7 @@
           </div>
           <div ng-show="isCompleted" class="topper">
             <div class="row">
-            <div class="col-sm-12"><a class="btn btn-success" type="" ng-click="showInterest(selectedJob)"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class="note"> View Your Jobs</p></a></div>
+            <div class="col-sm-12"><a class="btn btn-success" type="" ng-click="showInterest(selectedJob)"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class="note"> View Your Gigs</p></a></div>
             </div>
           </div>
         </div>

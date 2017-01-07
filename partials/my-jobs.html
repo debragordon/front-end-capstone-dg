@@ -1,7 +1,7 @@
 <div class="container">
 
   <div class="row text-center">
-    <h2>Interested Jobs</h2>
+    <h2>Interested Gigs</h2>
 <!--     <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs"> -->
     <div class="col-sm-3" ng-repeat="interestedJob in interestedJobs | filter:{isCompleted:false}">
       <div class="card card-block">
@@ -12,7 +12,7 @@
   <div class="form-check">
     <label class="form-check-label">
       <input type="checkbox" class="form-check-input" ng-model="interestedJob.isCompleted" ng-change="inputChange(interestedJob)">
-      Got the Job
+      Got the Gig
     </label>
   </div>
 </div>
@@ -20,7 +20,7 @@
   </div>
 
   <div class="row text-center">
-    <h2>Completed Jobs</h2>
+    <h2>Completed Gigs</h2>
 <!--     <div class="col-sm-4" ng-repeat="interestedJob in interestedJobs}"> -->
     <div class="col-sm-2" ng-repeat="interestedJob in interestedJobs | filter:{isCompleted:true}">
       <div class="card card-block">
