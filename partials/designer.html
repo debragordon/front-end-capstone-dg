@@ -1,0 +1,60 @@
+<div class="container" ng-controller="DesignerCtrl">
+<!-- FIRST BUTTON OPTION -->
+  <div class="btn-group topper bottomMarg" role="group" aria-label="Basic example">
+    <button class="btn btn-primary" ng-click="images = seederData.packages">Package Design</button>
+    <button class="btn btn-primary" ng-click="images = seederData.print">Print World</button>
+    <button class="btn btn-primary" ng-click="images = seederData.logos">Custom Logos</button>
+    <button class="btn btn-primary" ng-click="images = seederData.websites">Website Layout</button>
+    <button class="btn btn-primary" ng-click="images = seederData.digital">Digital Collateral</button>
+  </div>
+
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="{{$index}}" ng-class="{active:!$index}" ng-repeat="image in images"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item" ng-class="{active:!$index}" ng-repeat="image in images">
+        <img ng-src="{{image.image}}" alt="image-one" class="responsive">
+        <div class="carousel-caption row">
+          <h4>{{image.title}}</h3>
+          <h6>{{image.detail}}</h5>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev" target="_self"><span class="icon-prev"></span></a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next" target="_self"><span class="icon-next"></span></a>
+
+  </div>
+
+</div>
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-sm-2 text-center">
+      <button class="btn btn-primary" ng-click="images = seederData.packages">Package Design</button>
+    </div>
+    <div class="col-sm-2 text-center">
+      <button class="btn btn-primary" ng-click="images = seederData.print">Print World</button>
+    </div>
+    <div class="col-sm-2 text-center">
+      <button class="btn btn-primary" ng-click="images = seederData.logos">Custom Logos</button>
+    </div>
+    <div class="col-sm-2 text-center">
+      <button class="btn btn-primary" ng-click="images = seederData.websites">Website Layout</button>
+    </div>
+    <div class="col-sm-2 text-center">
+      <button class="btn btn-primary" ng-click="images = seederData.digital">Digital Collateral</button>
+    </div>
+  </div>
+</div> -->
+
+  <!-- <button class="btn btn-primary" ng-click="images = seederData.packages">Package</button>
+  <button class="btn btn-primary" ng-click="images = seederData.advertisements">Advertisements</button>
+  <button class="btn btn-primary" ng-click="images = seederData.logos">Custom Logos</button>
+  <button class="btn btn-primary" ng-click="images = seederData.websites">Websites</button>
+ -->

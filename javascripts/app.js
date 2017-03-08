@@ -1,3 +1,3 @@
 "use strict";
 
-var app = angular.module("MusicMatcher", ["ngRoute"]);
+var app = angular.module("DGTech", ["ngRoute"]);

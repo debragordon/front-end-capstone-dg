@@ -1,9 +1,32 @@
+/********************
+GENERAL
+********************/
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: Arial Rounded MT Bold, Helvetica Rounded, Arial, sans-serif; }
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+/********************
+CLASSES
+********************/
+.starter-template {
+  padding: 40px 15px;
+  text-align: center; }
+
+.debra {
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+  box-shadow: 0px 0px 20px #0f0000;
+  margin-bottom: 20px; }
 
 .card {
   border-radius: 10px;
@@ -13,44 +36,166 @@ body {
 .small {
   max-width: 70px; }
 
-a {
-  text-decoration: none;
-  /* no underline */ }
-
 .note {
-  font-size: .75em;
-  display: inline; }
-
-.fa-headphones {
-  color: #5bc0de; }
+  font-size: .75em; }
 
 .topper {
   margin-top: 30px;
   margin-bottom: 10px; }
 
+.footer {
+  margin-top: 10px; }
+
 .card-title, .card-text, .clickThis {
   margin-top: 10px; }
 
 .bottomMarg {
-  margin-bottom: 5px; }
-
-.cardPhoto {
-  width: 100%;
-  height: auto; }
+  margin-bottom: 20px; }
 
 .none {
   text-decoration: none;
   /* no underline */
-  color: #5bc0de;
+  color: #ffa31a;
   font-size: 1.25em; }
 
-.fa-music {
-  color: #5bc0de; }
+.space {
+  margin: 0px 0px 5px 0px;
+  font-size: 1.2em;
+  text-align: center; }
 
-.detail {
-  font-size: .75em; }
+/********************
+BUTTONS - INFO
+********************/
+.btn-info {
+  color: #fff;
+  background: #ffa31a;
+  border-color: #ff6f00; }
 
-.cardJob {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 10px; }
+.btn-info:focus,
+.btn-info.focus {
+  color: #fff;
+  background: #ffa91a;
+  border-color: #ff6f00; }
+
+.btn-info:hover {
+  color: #fff;
+  background: #ffc71a;
+  border-color: #ff6f00; }
+
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  color: #fff;
+  background: #ff8b1a;
+  border-color: #ff6f00; }
+
+.btn-info:active:hover,
+.btn-info.active:hover,
+.open > .dropdown-toggle.btn-info:hover,
+.btn-info:active:focus,
+.btn-info.active:focus,
+.open > .dropdown-toggle.btn-info:focus,
+.btn-info:active.focus,
+.btn-info.active.focus,
+.open > .dropdown-toggle.btn-info.focus {
+  color: #fff;
+  background: #ffc71a;
+  border-color: #ff6f00; }
+
+.btn-info:active,
+.btn-info.active,
+.open > .dropdown-toggle.btn-info {
+  background-image: none; }
+
+.btn-info.disabled:hover,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info:hover,
+.btn-info.disabled:focus,
+.btn-info[disabled]:focus,
+fieldset[disabled] .btn-info:focus,
+.btn-info.disabled.focus,
+.btn-info[disabled].focus,
+fieldset[disabled] .btn-info.focus {
+  background: #ffc71a;
+  border-color: #ff6f00; }
+
+.btn-info .badge {
+  color: #ffa31a;
+  background-color: #fff; }
+
+/********************
+BUTTONS - Primary
+********************/
+.btn-primary {
+  color: #fff;
+  background: #609999;
+  border-color: #246666; }
+
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #fff;
+  background: #60b199;
+  border-color: #246666; }
+
+.btn-primary:hover {
+  color: #fff;
+  background: #60b199;
+  border-color: #246666; }
+
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background: #60b199;
+  border-color: #246666; }
+
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+  background: #60b199;
+  border-color: #246666; }
+
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none; }
+
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
+  background: #60b199;
+  border-color: #246666; }
+
+.btn-primary .badge {
+  color: #609999;
+  background-color: #fff; }
+
+/********************
+CARD IMAGES
+********************/
+img .card-img-top {
+  width: 100%; }
+
+/********************
+CAROUSEL
+********************/
+.carousel-indicators li {
+  background-color: black;
+  border: 1px solid #000; }
+
+.carousel-caption {
+  padding-top: 0px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9); }

@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Debra Gordon Front End Capstone | MusicCityMatch</title>
+  <title>Debra Gordon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link href="styles/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <link href="styles/cover.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
-<body ng-app="MusicMatcher" ng-cloak>
-  <div ng-include="'./partials/nav.html'"></div>
+<body ng-app="DGTech" ng-cloak>
+  <div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center topper">
+            <div><i class="fa fa-circle-o"></i><i class="fa fa-circle-o fa-3x"></i><i class="fa fa-circle-o"></i></div>
+            <a ng-href="#/about" title=""><div class="none">DEBRA GORDON</div></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <a ng-href="#/developer" class="btn btn-info btn-block btn-lg">developer</a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a ng-href="#/designer" class="btn btn-info btn-block btn-lg">designer</a>
+          </div>
+          <div class="col-sm-4 text-center">
+            <a ng-href="#/contact" class="btn btn-info btn-block btn-lg">contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 
   <div class="row">
     <div class="col-xs-12" ng-view></div>
   </div>
 
+  <div class="topper">
+    <a href="http://twitter.com/intent/tweet?screen_name=debragodesign" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.facebook.com/debragordon" target="_blank"><i class="fa fa-facebook-official"></i></a>
+    <a href="http://www.linkedin.com/in/debramgordon" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+    <p class="note footer"><a href="http://www.nashville-songdemo.com/">&copy;</a>2017 <a href="/#/home">Debra Gordon.</a></p>
+  </div>
+
 <!-- JS files -->
-  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
   <script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="lib/node_modules/angular/angular.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="lib/node_modules/angular-route/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" src="/javascripts/app.js"></script>
-  <script type="text/javascript" src="/javascripts/AppConstants.js"></script>
   <script type="text/javascript" src="/javascripts/AppConfig.js"></script>
+  <script src="/javascripts/ie10-viewport-bug-workaround.js"></script>
 
-  <script src="/javascripts/controllers/AuthCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/controllers/NavCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
-<!-- FACTORIES -->
-  <script src="/javascripts/factories/AuthFactory.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/factories/UserFactory.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/factories/JobFactory.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/factories/ServiceFactory.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/factories/InterestFactory.js" type="text/javascript" charset="utf-8" async defer></script>
-<!-- DIRECTIVES -->
-  <script src="/javascripts/directives/fileread.js" type="text/javascript" charset="utf-8" async defer></script>
 
 <!-- CONTROLLERS -->
-  <script src="/javascripts/controllers/TalentHomeCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/controllers/AllServicesCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/controllers/JobDetailCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/controllers/MyJobsCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/controllers/ProfileEditCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/controllers/ProfileViewCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/controllers/ServiceDetailCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/controllers/ServiceEditCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
-  <script src="/javascripts/controllers/ServiceAddCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/javascripts/controllers/AboutCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/javascripts/controllers/ContactCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/javascripts/controllers/DesignerCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="/javascripts/controllers/DeveloperCtrl.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
