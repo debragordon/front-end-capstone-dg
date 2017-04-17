@@ -95,6 +95,11 @@
             "image": "img/main-website-2.jpg",
             "title": "Black Widow Grips",
             "detail": "Grip brand created by PrideSports"
+        },
+        "website2": {
+            "image": "img/main-website-3.jpg",
+            "title": "Music Demo Service",
+            "detail": "Nashville musician/producer that creates custom demos for songwriters"
         }
     },
     "digital": {
