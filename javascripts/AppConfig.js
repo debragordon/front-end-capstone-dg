@@ -18,5 +18,9 @@ app.config(function($routeProvider) {
             templateUrl: 'partials/contact.html',
             controller: 'ContactCtrl'
         })
+        .when('/singer', {
+            templateUrl: 'partials/singer.html',
+            controller: 'SingerCtrl'
+        })
         .otherwise('/home');
 });

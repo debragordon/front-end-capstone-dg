@@ -52,6 +52,9 @@ CLASSES
 .bottomMarg {
   margin-bottom: 20px; }
 
+.leftMarg {
+  margin-left: 20px; }
+
 .none {
   text-decoration: none;
   /* no underline */
